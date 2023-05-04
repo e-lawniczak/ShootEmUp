@@ -1,6 +1,7 @@
 #ifndef COMMON_HEADERS
 #define COMMON_HEADERS
 #include<SDL.h>
+#include<SDL_image.h>
 #include <iostream>
 #include <cstdlib>
 

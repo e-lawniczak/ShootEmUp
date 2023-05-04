@@ -28,4 +28,9 @@ void initSDL() {
 		printf("Failed to create renderer: %s\n", SDL_GetError());
 		exit(1);
 	}
+
+	if (IMG_Init(IMG_INIT_PNG | IMG_INIT_JPG) < 0) {
+		printf("IMG initialize error: %s", SDL_GetError());
+		exit(1);
+	}
 }
