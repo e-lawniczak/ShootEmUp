@@ -36,5 +36,5 @@ typedef struct Player : Entity
 typedef struct {
 	Entity fighterHead, * fighterTail;
 	Entity bulletHead, * bulletTail;
-};
+} Stage;
 #endif

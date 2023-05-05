@@ -6,6 +6,8 @@
 App app;
 Player player;
 Entity bullet;
+Stage stage;
+
 
 void handlePlayerMovement() {
 	player.x += player.dx;
@@ -48,8 +50,9 @@ void handleFire() {
 }
 int main(int argc, char* argv[]) {
 	memset(&app, 0, sizeof(App));
-	memset(&player, 0, sizeof(Entity));
+	memset(&player, 0, sizeof(Player));
 	memset(&bullet, 0, sizeof(Entity));
+	memset(&stage, 0, sizeof(Stage));
 
 	initSDL();
 	player.x = 100;
