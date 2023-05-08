@@ -104,13 +104,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>F:\Game Jams\SDL\SDL2VC\include;F:\Game Jams\SDL\SDL2_imageVC\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Game Jams\SDL\SDL2VC\include;F:\Game Jams\SDL\SDL2_imageVC\include;F:\Game Jams\SDL\SDL2_mixerVC\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>F:\Game Jams\SDL\SDL2VC\lib\x64;F:\Game Jams\SDL\SDL2_imageVC\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>F:\Game Jams\SDL\SDL2VC\lib\x64;F:\Game Jams\SDL\SDL2_imageVC\lib\x64;F:\Game Jams\SDL\SDL2_mixerVC\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -134,6 +134,7 @@
     <ClCompile Include="init.cpp" />
     <ClCompile Include="input.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="sound.cpp" />
     <ClCompile Include="stage.cpp" />
     <ClCompile Include="util.cpp" />
   </ItemGroup>
@@ -144,9 +145,25 @@
     <ClInclude Include="init.h" />
     <ClInclude Include="input.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="sound.h" />
     <ClInclude Include="stage.h" />
     <ClInclude Include="structs.h" />
     <ClInclude Include="util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="img\background.png" />
+    <Image Include="img\bullet.png" />
+    <Image Include="img\enemy.png" />
+    <Image Include="img\enemy2.png" />
+    <Image Include="img\enemy_bullet.png" />
+    <Image Include="img\explosion.png" />
+    <Image Include="img\player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="sound\alien_die.mp3" />
+    <Media Include="sound\alien_fire.mp3" />
+    <Media Include="sound\player_die.mp3" />
+    <Media Include="sound\player_fire.mp3" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -3,7 +3,7 @@
 #include "draw.h"
 #include "input.h"
 #include "stage.h"
-
+#include "sound.h"
 App app;
 Entity* player;
 Stage stage;
@@ -23,7 +23,8 @@ int main(int argc, char* argv[]) {
 
 	initSDL();
 	initStage();
-
+	initSounds();
+	playMusic(1);
 	while (1)
 	{
 		prepareScene();

@@ -33,4 +33,20 @@ void initSDL() {
 		printf("IMG initialize error: %s", SDL_GetError());
 		exit(1);
 	}
+	if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 1024) == -1)
+	{
+		printf("Couldn't initialize SDL Mixer\n");
+		exit(1);
+	}
+	int vol1 = 2;
+	int vol2 = 30;
+	Mix_AllocateChannels(MAX_SND_CHANNELS);
+	Mix_Volume(CH_ALIEN_FIRE, vol1);
+	Mix_Volume(CH_ANY, vol1);
+	Mix_Volume(CH_PLAYER, vol1);
+	Mix_Volume(CH_MUSIC, 5);
+	Mix_Volume(CH_ALIEN_DIE, vol1);
+	Mix_VolumeMusic(vol2);
+
+	SDL_ShowCursor(0);
 }

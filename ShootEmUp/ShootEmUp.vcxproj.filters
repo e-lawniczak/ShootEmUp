@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Resource Files\img">
+      <UniqueIdentifier>{cc2626aa-ee46-4692-a366-54f006776962}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\sound">
+      <UniqueIdentifier>{518b21cf-4979-4792-aba7-af8249545884}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -31,6 +37,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sound.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -62,5 +71,45 @@
     <ClInclude Include="util.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="sound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="img\background.png">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+    <Image Include="img\bullet.png">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+    <Image Include="img\enemy.png">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+    <Image Include="img\enemy_bullet.png">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+    <Image Include="img\enemy2.png">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+    <Image Include="img\explosion.png">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+    <Image Include="img\player.png">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="sound\alien_die.mp3">
+      <Filter>Resource Files\sound</Filter>
+    </Media>
+    <Media Include="sound\alien_fire.mp3">
+      <Filter>Resource Files\sound</Filter>
+    </Media>
+    <Media Include="sound\player_die.mp3">
+      <Filter>Resource Files\sound</Filter>
+    </Media>
+    <Media Include="sound\player_fire.mp3">
+      <Filter>Resource Files\sound</Filter>
+    </Media>
   </ItemGroup>
 </Project>
