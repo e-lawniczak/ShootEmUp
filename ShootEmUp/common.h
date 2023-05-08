@@ -7,5 +7,8 @@
 
 #include "structs.h"
 #include "defs.h"
+
 extern App app;
+extern Stage stage;
+extern Entity* player;
 #endif

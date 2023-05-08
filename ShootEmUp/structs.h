@@ -4,8 +4,8 @@
 #define STRUCT_HEADERS
 typedef struct
 {
-	void (*logic)(void);
-	void (*draw)(void);
+	void (*logic)();
+	void (*draw)();
 } Delegate;
 typedef struct
 {
@@ -14,27 +14,21 @@ typedef struct
 	Delegate delegate;
 	int keyboard[MAX_KEYBOARD_KEYS];
 } App;
-typedef struct
-{
+struct Entity {
 	float x;
 	float y;
-	int width;
-	int height;
+	int w;
+	int h;
 	float dx;
 	float dy;
 	int health;
 	int reload;
 	SDL_Texture* texture;
 	Entity* next;
-} Entity;
-
-typedef struct Player : Entity
-{
-	int speed;
 };
 
 typedef struct {
 	Entity fighterHead, * fighterTail;
 	Entity bulletHead, * bulletTail;
-};
+} Stage;
 #endif
