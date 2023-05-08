@@ -11,4 +11,5 @@
 extern App app;
 extern Stage stage;
 extern Entity* player;
+
 #endif

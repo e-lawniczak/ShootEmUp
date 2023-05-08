@@ -6,7 +6,6 @@
 
 App app;
 Entity* player;
-Entity bullet;
 Stage stage;
 
 
@@ -16,7 +15,6 @@ int main(int argc, char* argv[]) {
 
 	memset(&app, 0, sizeof(App));
 	memset(&player, 0, sizeof(Entity));
-	memset(&bullet, 0, sizeof(Entity));
 
 
 	then = SDL_GetTicks();
@@ -24,7 +22,7 @@ int main(int argc, char* argv[]) {
 
 	initSDL();
 	initStage();
-	
+
 	while (1)
 	{
 		prepareScene();
@@ -33,12 +31,12 @@ int main(int argc, char* argv[]) {
 
 		app.delegate.logic();
 		app.delegate.draw();
-	
+
 
 		presentScene();
 
 		SDL_Delay(16);
 	}
-	
+
 	return 0;
 }
