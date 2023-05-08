@@ -1,12 +1,28 @@
-﻿  stage.cpp
-F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(107,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(111,15): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(173,41): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(173,30): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(182,27): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(182,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(191,27): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(191,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(198,12): warning C4244: '=': conversion from 'float' to 'long', possible loss of data
-F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(209,21): warning C4305: '+=': truncation from 'double' to 'float'
+﻿  main.cpp
+F:\Game Jams\Projects\ShootEmUp\ShootEmUp\main.cpp(15,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  stage.cpp
+F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(195,77): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(195,71): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(195,51): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(195,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(204,85): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(204,79): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(204,51): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(204,40): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(223,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(239,15): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(275,70): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(275,64): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(275,46): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(275,40): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(322,42): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(322,31): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(331,27): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(331,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(340,27): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(340,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(347,12): warning C4244: '=': conversion from 'float' to 'long', possible loss of data
+F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(358,21): warning C4305: '+=': truncation from 'double' to 'float'
+F:\Game Jams\Projects\ShootEmUp\ShootEmUp\stage.cpp(383,30): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
   ShootEmUp.vcxproj -> F:\Game Jams\Projects\ShootEmUp\x64\Debug\ShootEmUp.exe

@@ -4,9 +4,13 @@
 #include<SDL_image.h>
 #include <iostream>
 #include <cstdlib>
+#include <math.h>
+#include <ctime>
+#include <cstdio>
 
 #include "structs.h"
 #include "defs.h"
+#include "util.h"
 
 extern App app;
 extern Stage stage;

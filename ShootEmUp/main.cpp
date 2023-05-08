@@ -12,6 +12,7 @@ Stage stage;
 int main(int argc, char* argv[]) {
 	long then;
 	float remainder;
+	srand(time(NULL));
 
 	memset(&app, 0, sizeof(App));
 	memset(&player, 0, sizeof(Entity));

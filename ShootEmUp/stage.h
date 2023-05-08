@@ -13,4 +13,11 @@ static void capFrameRate(long* then, float* remainder);
 static void handleFighters();
 static void spawnEnemies();
 static void drawFighters();
+static int bulletHitFighter(Entity* b);
+static int fighterHitPlayer(Entity* e, Entity* prev);
+static void resetStage();
+static void handleEnemies(void);
+static void fireAlienBullet(Entity* e);
+static void clipPlayer();
+
 #endif
