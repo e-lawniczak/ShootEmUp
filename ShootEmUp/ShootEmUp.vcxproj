@@ -165,6 +165,9 @@
     <Media Include="sound\player_die.mp3" />
     <Media Include="sound\player_fire.mp3" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\readme.md" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
