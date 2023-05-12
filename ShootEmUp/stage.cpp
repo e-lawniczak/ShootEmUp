@@ -87,6 +87,7 @@ static void resetStage(void)
 	enemySpawnTimer = 0;
 
 	stageResetTimer = FPS * 3;
+	//player->health = PLAYER_START_HP;
 }
 
 static void initPlayer(void) {
@@ -100,7 +101,7 @@ static void initPlayer(void) {
 	player->y = 100;
 	player->h = 76;
 	player->w = 76;
-	player->health = 1;
+	player->health = PLAYER_START_HP;
 	player->side = SIDE_PLAYER;
 	player->texture = playerTexture;
 	SDL_QueryTexture(player->texture, NULL, NULL, &player->w, &player->h);
@@ -332,10 +333,10 @@ static void handleFighters() {
 		if ((e != player && e->x < -e->w))
 		{
 			e->health = 0;
-			
+
 		}
 		if ((e != player && fighterHitPlayer(e, prev))) {
-			player->health = 0;
+			player->health = player->health - 1;
 		}
 
 		if (e->health == 0)
@@ -353,9 +354,9 @@ static void handleFighters() {
 			{
 				stage.fighterTail = prev;
 			}
-			if (e != player) {
+			if (e != player && e->killed == 1) {
 				playSound(SND_ALIEN_DIE, CH_ALIEN_DIE);
-				addExplosions(e->x, e->y, 2+ rand()%4);
+				addExplosions(e->x, e->y, 2 + rand() % 4);
 				stage.score++;
 				highscore = std::max(stage.score, highscore);
 			}
@@ -433,6 +434,7 @@ static void spawnEnemies() {
 		enemy->y = rand() % (SCREEN_HEIGHT - 100);
 		enemy->side = SIDE_ALIEN;
 		enemy->points = 1;
+		enemy->killed = 0;
 
 		if (isHarder == 0) {
 			enemy->texture = harderEnemyTexture;
@@ -488,10 +490,14 @@ static int bulletHitFighter(Entity* b)
 
 	for (e = stage.fighterHead.next; e != NULL; e = e->next)
 	{
+
 		if (e->side != b->side && b->health > 0 && collision(b->x, b->y, b->w, b->h, e->x, e->y, e->w, e->h))
 		{
+
 			b->health = 0;
 			e->health = e->health - 1;
+			if (e->health == 0)
+				e->killed = 1;
 
 			return 1;
 		}
@@ -556,7 +562,13 @@ static void draw(void)
 
 static void drawHud(void)
 {
-	drawFont(10, 10, 255, 255, 255, "SCORE: %03d", stage.score);
+	drawFont(700, 10, 255, 255, 255, "SCORE: %03d", stage.score);
+	if (player != NULL) {
+		drawFont(10, 10, 255, 255, 255, "HP: %01d", player->health);
+	}
+	else {
+		drawFont(10, 10, 255, 255, 255, "HP: %01d", 0);
+	}
 
 	if (stage.score > 0 && stage.score == highscore)
 	{

@@ -1,3 +1,5 @@
 .vs/
 ShootEmUp/ShootEmUp.vcxproj
 ShootEmUp/x64/*
+*ShootEmUp/ShootEmUp.vcxproj
+*.vcxproj

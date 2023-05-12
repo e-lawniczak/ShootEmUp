@@ -25,6 +25,7 @@ struct Entity {
 	int health;
 	int reload;
 	int points;
+	int killed;
 	SDL_Texture* texture;
 	Entity* next;
 };

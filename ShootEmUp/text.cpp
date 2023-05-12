@@ -52,7 +52,6 @@ void drawText(int x, int y, int r, int g, int b, std::string format, ...)
 
 void drawFont(int x, int y, int r, int g, int b, std::string format, ...) {
 	SDL_Texture* texture;
-	SDL_Rect rect;
 	va_list args;
 
 	SDL_Surface* surface;
@@ -64,8 +63,6 @@ void drawFont(int x, int y, int r, int g, int b, std::string format, ...) {
 	surface = TTF_RenderText_Solid(arial, drawTextBuffer, textColor);
 	texture = SDL_CreateTextureFromSurface(app.renderer, surface);
 
-	rect.w = GLYPH_WIDTH;
-	rect.h = GLYPH_HEIGHT;
-	rect.y = 0;
-	blitRect(texture, &rect, x, y);
+	
+	blit(texture, x, y);
 }

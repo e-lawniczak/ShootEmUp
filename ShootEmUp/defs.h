@@ -8,6 +8,7 @@
 #define PLAYER_SPEED			4
 #define PLAYER_BULLET_SPEED		16
 #define PLAYER_RELOAD			10
+#define PLAYER_START_HP			3
 
 #define SIDE_PLAYER		0
 #define SIDE_ALIEN		1
