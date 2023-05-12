@@ -1,3 +1,1 @@
-﻿  main.cpp
-F:\Game Jams\Projects\ShootEmUp\ShootEmUp\structs.h(24,2): warning C4091: 'typedef ': ignored on left of 'Player' when no variable is declared
-  ShootEmUp.vcxproj -> F:\Game Jams\Projects\ShootEmUp\x64\Debug\ShootEmUp.exe
+﻿  ShootEmUp.vcxproj -> F:\Game Jams\Projects\ShootEmUp\x64\Debug\ShootEmUp.exe

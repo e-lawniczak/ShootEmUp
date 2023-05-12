@@ -2,13 +2,20 @@
 #define COMMON_HEADERS
 #include<SDL.h>
 #include<SDL_image.h>
+#include <string>
+#include<SDL_mixer.h>
 #include <iostream>
 #include <cstdlib>
+#include <math.h>
+#include <ctime>
+#include <cstdio>
 
 #include "structs.h"
 #include "defs.h"
+#include "util.h"
+
 extern App app;
-extern Player player;
 extern Stage stage;
+extern Entity* player;
 
 #endif
