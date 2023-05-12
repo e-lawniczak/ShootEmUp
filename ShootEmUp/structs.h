@@ -53,6 +53,7 @@ typedef struct {
 	Entity bulletHead, * bulletTail;
 	Explosion explosionHead, * explosionTail;
 	Debris debrisHead, * debrisTail;
+	Entity pointsHead, * pointsTail;
 	int score;
 } Stage;
 

@@ -30,4 +30,7 @@ static void drawStarfield(void);
 static void drawDebris(void);
 static void drawExplosions(void);
 static void drawHud(void);
+static void drawPointsPods(void);
+static void addPointsPod(int x, int y);
+static void doPointsPods(void);
 #endif

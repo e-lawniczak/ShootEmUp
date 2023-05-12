@@ -14,13 +14,16 @@ void initSounds(void)
 	loadSounds();
 	loadMusic("sound/theme.mp3");
 }
+
 static void loadSounds(void)
 {
 	sounds[SND_PLAYER_FIRE] = Mix_LoadWAV("sound/player_fire.mp3");
 	sounds[SND_ALIEN_FIRE] = Mix_LoadWAV("sound/alien_fire.mp3");
 	sounds[SND_PLAYER_DIE] = Mix_LoadWAV("sound/player_die.mp3");
 	sounds[SND_ALIEN_DIE] = Mix_LoadWAV("sound/alien_die.mp3");
+	sounds[SND_POINTS] = Mix_LoadWAV("sound/points.mp3");
 }
+
 void loadMusic(std::string filename)
 {
 	if (music != NULL)

@@ -42,14 +42,16 @@ void initSDL() {
 		printf("Couldn't initialize SDL TTF\n");
 		exit(1);
 	}
+	
 	int vol1 = 2;
-	int vol2 = 30;
+	int vol2 = 15;
 	Mix_AllocateChannels(MAX_SND_CHANNELS);
 	Mix_Volume(CH_ALIEN_FIRE, vol1);
 	Mix_Volume(CH_ANY, vol1);
 	Mix_Volume(CH_PLAYER, vol1);
 	Mix_Volume(CH_MUSIC, 5);
 	Mix_Volume(CH_ALIEN_DIE, vol1);
+	Mix_Volume(CH_POINTS, vol1+4);
 	Mix_VolumeMusic(vol2);
 
 	SDL_ShowCursor(0);
