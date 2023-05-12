@@ -104,12 +104,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\erykLocal\SDL\SDL2VC\include;C:\erykLocal\SDL\SDL2_imageVC\include;C:\erykLocal\SDL\SDL2_mixerVC\include;C:\erykLocal\SDL\SDL2_ttfVC\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\Game Jams\SDL\SDL2VC\include;F:\Game Jams\SDL\SDL2_imageVC\include;F:\Game Jams\SDL\SDL2_mixerVC\include;F:\Game Jams\SDL\SDL2_ttfVC\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\erykLocal\SDL\SDL2VC\lib\x64;C:\erykLocal\SDL\SDL2_imageVC\lib\x64;C:\erykLocal\SDL\SDL2_mixerVC\lib\x64;C:\erykLocal\SDL\SDL2_ttfVC\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>F:\Game Jams\SDL\SDL2VC\lib\x64;F:\Game Jams\SDL\SDL2_imageVC\lib\x64;F:\Game Jams\SDL\SDL2_mixerVC\lib\x64;F:\Game Jams\SDL\SDL2_ttfVC\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
