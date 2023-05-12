@@ -104,13 +104,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>F:\Game Jams\SDL\SDL2VC\include;F:\Game Jams\SDL\SDL2_imageVC\include;F:\Game Jams\SDL\SDL2_mixerVC\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\erykLocal\SDL\SDL2VC\include;C:\erykLocal\SDL\SDL2_imageVC\include;C:\erykLocal\SDL\SDL2_mixerVC\include;C:\erykLocal\SDL\SDL2_ttfVC\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>F:\Game Jams\SDL\SDL2VC\lib\x64;F:\Game Jams\SDL\SDL2_imageVC\lib\x64;F:\Game Jams\SDL\SDL2_mixerVC\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\erykLocal\SDL\SDL2VC\lib\x64;C:\erykLocal\SDL\SDL2_imageVC\lib\x64;C:\erykLocal\SDL\SDL2_mixerVC\lib\x64;C:\erykLocal\SDL\SDL2_ttfVC\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -136,6 +136,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="sound.cpp" />
     <ClCompile Include="stage.cpp" />
+    <ClCompile Include="text.cpp" />
     <ClCompile Include="util.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -148,9 +149,11 @@
     <ClInclude Include="sound.h" />
     <ClInclude Include="stage.h" />
     <ClInclude Include="structs.h" />
+    <ClInclude Include="text.h" />
     <ClInclude Include="util.h" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="font\font.png" />
     <Image Include="img\background.png" />
     <Image Include="img\bullet.png" />
     <Image Include="img\enemy.png" />

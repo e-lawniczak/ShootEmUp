@@ -4,10 +4,11 @@
 #include "input.h"
 #include "stage.h"
 #include "sound.h"
+#include "text.h"
 App app;
 Entity* player;
 Stage stage;
-
+int highscore = 0;
 
 int main(int argc, char* argv[]) {
 	long then;
@@ -24,6 +25,7 @@ int main(int argc, char* argv[]) {
 	initSDL();
 	initStage();
 	initSounds();
+	initFonts();
 	playMusic(1);
 	while (1)
 	{

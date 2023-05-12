@@ -24,6 +24,7 @@ struct Entity {
 	int side;
 	int health;
 	int reload;
+	int points;
 	SDL_Texture* texture;
 	Entity* next;
 };
@@ -51,6 +52,7 @@ typedef struct {
 	Entity bulletHead, * bulletTail;
 	Explosion explosionHead, * explosionTail;
 	Debris debrisHead, * debrisTail;
+	int score;
 } Stage;
 
 

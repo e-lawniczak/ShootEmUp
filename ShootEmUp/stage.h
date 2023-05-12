@@ -29,4 +29,5 @@ static void drawBackground(void);
 static void drawStarfield(void);
 static void drawDebris(void);
 static void drawExplosions(void);
+static void drawHud(void);
 #endif

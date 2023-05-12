@@ -1,4 +1,5 @@
 #include "common.h"
+#include "text.h"
 #include "draw.h"
 #include "stage.h"
 #include "sound.h"
@@ -78,6 +79,7 @@ static void resetStage(void)
 	stage.bulletTail = &stage.bulletHead;
 	stage.explosionTail = &stage.explosionHead;
 	stage.debrisTail = &stage.debrisHead;
+	stage.score = 0;
 
 	initPlayer();
 	initStarfield();
@@ -354,6 +356,8 @@ static void handleFighters() {
 			if (e != player) {
 				playSound(SND_ALIEN_DIE, CH_ALIEN_DIE);
 				addExplosions(e->x, e->y, 2+ rand()%4);
+				stage.score++;
+				highscore = std::max(stage.score, highscore);
 			}
 
 			prev->next = e->next;
@@ -426,15 +430,17 @@ static void spawnEnemies() {
 		stage.fighterTail = enemy;
 
 		enemy->x = SCREEN_WIDTH;
-		enemy->y = rand() % (SCREEN_HEIGHT - 100) + 100;
+		enemy->y = rand() % (SCREEN_HEIGHT - 100);
 		enemy->side = SIDE_ALIEN;
+		enemy->points = 1;
 
 		if (isHarder == 0) {
 			enemy->texture = harderEnemyTexture;
 			enemy->health = 4;
-			enemy->reload = FPS * (0 + (rand() % 3));
+			enemy->reload = FPS * (1 + (rand() % 3));
 			enemy->w = 60;
 			enemy->h = 60;
+			enemy->points = 3;
 		}
 		else {
 			enemy->w = 90;
@@ -448,7 +454,7 @@ static void spawnEnemies() {
 
 		enemy->dx = -(2 + (rand() % 4));
 
-		enemySpawnTimer = 15 + (rand() % 30);
+		enemySpawnTimer = 15 + (rand() % 25);
 	}
 }
 static void handleBullets(void) {
@@ -545,6 +551,21 @@ static void draw(void)
 	drawFighters();
 	drawExplosions();
 	drawDebris();
+	drawHud();
+}
+
+static void drawHud(void)
+{
+	drawFont(10, 10, 255, 255, 255, "SCORE: %03d", stage.score);
+
+	if (stage.score > 0 && stage.score == highscore)
+	{
+		drawFont(960, 10, 0, 255, 0, "HIGH SCORE: %03d", highscore);
+	}
+	else
+	{
+		drawFont(960, 10, 255, 255, 255, "HIGH SCORE: %03d", highscore);
+	}
 }
 
 static void drawPlayer(void)

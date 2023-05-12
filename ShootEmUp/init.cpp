@@ -38,6 +38,10 @@ void initSDL() {
 		printf("Couldn't initialize SDL Mixer\n");
 		exit(1);
 	}
+	if (TTF_Init() < 0) {
+		printf("Couldn't initialize SDL TTF\n");
+		exit(1);
+	}
 	int vol1 = 2;
 	int vol2 = 30;
 	Mix_AllocateChannels(MAX_SND_CHANNELS);
